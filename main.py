@@ -3,6 +3,6 @@ def main(N: int) -> int:
 
 
 if __name__ == "__main__":
-    T: int = int(input("How many test cases?\n"))
-    for N in [int(input()) for _ in range(T)]:
+    T: int = int(input("How many test cases?\n").strip())
+    for N in [int(input().strip()) for _ in range(T)]:
         print(main(N))
